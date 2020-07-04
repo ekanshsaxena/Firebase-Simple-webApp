@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Firebase simple project</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    </head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col content">
+                <h1><u>Users</u></h1>
+                <form id="add-user-form">
+                    <input type="text" id="first" name="firstname" placeholder="user's firstname">
+                    <input type="text" name="lastname" placeholder="user's lastname">
+                    <button class="btn btn-warning" style="color:white;">Add User</button>
+                </form>
+                <form id="update-user-form">
+                    <input type="text" id="second" name="idselect" placeholder="id">
+                    <input type="text" name="fnupdate" placeholder="user's firstname">
+                    <input type="text" name="lnupdate" placeholder="user's lastname">
+                    <button class="btn btn-warning" style="color:white;">Update User</button>
+                </form>
+                <ul id="user-list">
+                </ul>
+            </div>
+        </div>
+    </div>
+
+   <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-app.js"></script>
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-firestore.js"></script>
+
+    <script>
+        var firebaseConfig = {
+          apiKey: "AIzaSyBEpC79lZK0Lbu6uaOq8-NYHfGe8_a6W3I",
+          authDomain: "userproject-1a5ec.firebaseapp.com",
+          databaseURL: "https://userproject-1a5ec.firebaseio.com",
+          projectId: "userproject-1a5ec",
+          storageBucket: "userproject-1a5ec.appspot.com",
+          messagingSenderId: "10848244487",
+          appId: "1:10848244487:web:c13a67c66867a1546beba2",
+          measurementId: "G-5434HHCN70"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        const db=firebase.firestore();
+        //db.settings({ timestampsInSnapshots: true });
+      </script>
+    <script src="app.js"></script>
+</body>
+</html>

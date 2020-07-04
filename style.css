@@ -1,0 +1,44 @@
+.container{
+    border: 10px solid red;
+    margin: 5% 5% 5% 5%;
+    text-align: center;
+    background-color: hotpink;
+}
+li{ 
+    text-align: left;
+    padding: 20px;
+    border: 3px solid grey;
+    background-color: rgb(183, 174, 192);
+    margin-right: 40px;
+}
+li > h2{
+    font-size: 20px;
+    text-align: center;
+    height: 30px;
+    width: 40px;
+    background-color: yellow;
+    color: rgb(207, 74, 74);
+    font-weight: bolder;
+}
+span{
+    font-size: 16px;
+    padding: 2px 2px 2px;
+}
+form{
+    margin: 3%;
+}
+#first{
+    margin-left: 10%;
+}
+#second{
+    margin-left: 10%;
+    width: 15%;
+}
+input{
+    padding: 10px;
+    margin-left: 5px;
+}
+.btn{
+    color: red;
+    margin-left: 20px;
+}
